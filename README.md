@@ -39,6 +39,7 @@ Each message has 8 bytes (HEX), the first byte is 'index', the rest 7 bytes is '
 
 ## CRC calcualtion
 
+create a gawk script to calculate crc, input is a hex text file, for example @file:test.hex
 below is the calculation in C#:
 
 ```csharp
