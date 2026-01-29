@@ -1,0 +1,42 @@
+=== HEX2CAN Dump - Generated at 28-Jan-2026 5:44:57 PM ===
+Array Dimensions: Pages=1600, Messages/Page=12, Bytes/Message=8
+Total Pages: 2
+Page Size: 64 bytes
+Messages per Page: 11
+================================================================================
+
+=== PAGE 000 ===
+Page Index: 0
+Is Active Page: Yes
+
+Message 00: 0 40 00 00 00 00 20 00  | MC=0 [Page Header] PageSize: 64 FlashAddr: 0x00002000
+Message 01: 1 80 5e 32 33 47 00 47  | MC=1
+Message 02: 2 00 c7 eb 6f 08 f1 33  | MC=2
+Message 03: 3 6c 08 f0 33 16 08 eb  | MC=3
+Message 04: 4 33 19 08 ee 33 38 08  | MC=4
+Message 05: 5 e4 33 42 08 e5 33 3c  | MC=5
+Message 06: 6 08 ea 33 3d 08 e7 33  | MC=6
+Message 07: 7 51 08 d3 33 3f 08 d6  | MC=7
+Message 08: 8 33 c6 9a c9 8b f9 31  | MC=8
+Message 09: 9 14 61 bc 33 c6 94 c9  | MC=9
+Message 10: A 91 FF FF FF FF FF FF  | MC=A
+Message 11: FA 88 FE FF FF FF FF FF  | MC=FA
+
+=== PAGE 001 ===
+Page Index: 1
+Is Active Page: Yes
+
+Message 00: 0 40 00 00 00 00 20 40  | MC=0 [Page Header] PageSize: 64 FlashAddr: 0x00002040
+Message 01: 1 f9 31 17 61 ce 33 73  | MC=1
+Message 02: 2 ac 76 79 f9 31 bd 61  | MC=2
+Message 03: 3 c4 33 39 a3 39 8b f8  | MC=3
+Message 04: 4 31 39 c1 3c 61 d5 33  | MC=4
+Message 05: 5 c9 a1 c6 84 f9 31 8d  | MC=5
+Message 06: 6 61 bc 33 a7 b2 8f 61  | MC=6
+Message 07: 7 4c 33 a7 8b f8 31 a7  | MC=7
+Message 08: 8 cc 73 61 ca 33 a7 84  | MC=8
+Message 09: 9 2c 31 a7 c3 d9 d2 00  | MC=9
+Message 10: A 0a FF FF FF FF FF FF  | MC=A
+Message 11: FA D7 0D FF FF FF FF FF  | MC=FA
+
+
