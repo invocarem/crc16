@@ -1,13 +1,13 @@
-# crc16
+# filter
 
+This defines a gawk script that process a text file
 
-# block transfer
 ### requirements
 
-1. the script parse should 'MC=0' to get block length
-2. the script should convert hex to byte into a buffer
-3. the script should extract 'MC=FA' get crc
-4. the script should generate crc based on the buffer
+1. the script parses 'MC=0' for block length
+2. the script parses 'MC=1','MC=2',...,'MC=F9' to get block data
+3. the script parses 'MC=FA' for block
+4. the script should generate crc based on the parsed block buffer
 5. compare the two crc, hope they are same
 
 ## Input is a text file:
@@ -36,3 +36,6 @@ Each message has 8 bytes (HEX), the first byte is 'index', the rest 7 bytes is '
 1. header: index is 0, byte 2 and 3 is block length
 2. body: index 1 to 249 (0xF9), when more than 249, start from 1 again
 3. footer: index is 250 (0xFA), byte 2 and 3 is crc
+
+# Awk Implementation notes
+1. for generating crc please refer to crc16.md and crc16.awk
