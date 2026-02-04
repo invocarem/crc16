@@ -3,19 +3,24 @@
 A gawk script to calculate crc for a byte array. The byte array is given by a text file, each byte contains 2 ascii hex character.
 
 ## Usage
+
 ```bash
 gawk -f crc16.awk test_input.txt
 ```
 
 ## input text file
+
 The delimiter of the text is whitespace, every byte is 2 ascii hex characters, so 'FF' is the byte number 255. The text file may contains multiple lines.
 below is an example
+
 ```Text
-31 32 33 34 35 36 37 38 
-39 
+31 32 33 34 35 36 37 38
+39
 ```
+
 ## output format
-Use hex ascii string to display CRC. For above nine bytes data '123456789', it should display 'BB3D'. 
+
+Use hex ascii string to display CRC. For above nine bytes data '123456789', it should display 'BB3D'.
 
 ## CRC calcualtion
 
@@ -73,9 +78,10 @@ public static UInt16 FastCRC16(byte[] Buffer, UInt16 ui_length)
 ```
 
 ## Awk Implementation Notes
+
 1. Awk bitwise functions: use and(), xor(), rshift() for bitoperation
 2. Awk Table Initialization: use assignment: table[0] = 'a'
 3. Number handling: AWK uses floating point, so ensure proper masking with and(value, 0xFFFF)
 4. Table accuracy: The CRC table MUST be identical to the C# table
 5. Byte order: Process bytes in the exact order they appear in input
-6. Acception test: run the script: gawk -f ./crc16.awk test.hex, expect BB3D
+6. Acception test: run the script: gawk -f ./crc16.awk test_input.txt, expect BB3D
