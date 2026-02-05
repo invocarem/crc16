@@ -1,6 +1,6 @@
 # crc16
 
-A gawk script to calculate crc for a byte array. The byte array is given by a text file, each byte contains 2 ascii hex character.
+Write a gawk script to calculate crc. The input is a text file which is a dump of a byte array. Each byte, represented by 2 ascii hex character, is using a white space as delimiter.
 
 ## Usage
 
